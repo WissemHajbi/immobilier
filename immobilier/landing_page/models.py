@@ -48,7 +48,7 @@ class sale(models.Model):
      
     description = models.CharField(max_length=1000)
     
-    rooms = models.IntegerField(max=9, default=0)
+    rooms = models.IntegerField( default=0)
    
     #Contact fields
     number = models.CharField(max_length=8, blank=True, null=True)

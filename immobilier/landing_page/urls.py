@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.urls import path
-from .views import landingPage
+from .views import register_view
 
 urlpatterns = [
-    path('', landingPage.as_view(), name="landingPage"), 
+    path('register', register_view, name="register"), 
 ]
